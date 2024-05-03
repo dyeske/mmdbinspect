@@ -37,13 +37,12 @@ echo "$version"
 echo $'\nRelease notes:'
 echo "$notes"
 
-read -e -p "Push to origin? " should_push
+# read -e -p "Push to origin? " should_push
 
-if [ "$should_push" != "y" ]; then
-    echo "Aborting"
-    exit 1
-fi
-
-git push
+# if [ "$should_push" != "y" ]; then
+#     echo "Aborting"
+#     exit 1
+# fi
+# git push
 
 gh release create --target "$(git branch --show-current)" -t "$version" -n "$notes" "$tag"
