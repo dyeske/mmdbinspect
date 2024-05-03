@@ -26,10 +26,10 @@ if [[ "$date" != "$(date +"%Y-%m-%d")" ]]; then
     exit 1
 fi
 
-if [ -n "$(git status --porcelain)" ]; then
-    echo ". is not clean." >&2
+# if [ -n "$(git status --porcelain)" ]; then
+#     echo ". is not clean." >&2
     # FIXME: exit 1
-fi
+# fi
 
 echo $'\nVersion:'
 echo "$version"
