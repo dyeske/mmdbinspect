@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 0.2.0 (2024-05-03)
+## 0.2.0 (2024-05-04)
 
 * Don't escape `&`, `<`, and `>` in JSON output
 * Skip aliased IPv6 networks by default
